@@ -5,6 +5,7 @@ using UnityEngine;
 public class PLayerController : MonoBehaviour
 {
     Rigidbody2D rb;
+    SpriteRenderer spriteRenderer;
     float movementSpeed = 4f;
     float movementLimter = 0.7f;
     float inputVerticle;
@@ -21,6 +22,7 @@ public class PLayerController : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
     }
 
@@ -42,11 +44,21 @@ public class PLayerController : MonoBehaviour
 
             rb.velocity = new Vector2(inputHorizontal * movementSpeed, inputVerticle * movementSpeed);
 
-            if(inputVerticle > 0)
+            if (inputHorizontal > 0)
+            {
+                spriteRenderer.flipX = true;
+                AnimationStateChanger(RUN_SIDE);
+            }
+            else if (inputHorizontal < 0)
+            {
+                spriteRenderer.flipX = false;
+                AnimationStateChanger(RUN_SIDE);
+            }
+            else if (inputVerticle > 0)
             {
                 AnimationStateChanger(RUN_UP);
             }
-            if (inputVerticle < 0)
+            else if (inputVerticle < 0)
             {
                 AnimationStateChanger(RUN_DOWN);
             }
