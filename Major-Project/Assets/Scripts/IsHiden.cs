@@ -21,17 +21,18 @@ public class IsHiden : MonoBehaviour
         float angle = Vector3.Angle(dir, fovPoint.up);
         RaycastHit2D r = Physics2D.Raycast(fovPoint.position, dir, range);
 
-        if (angle < fovAngle / 2)
+        if (angle > fovAngle / 2)
         {
-            if (r.collider.CompareTag("Player"))
+            if (r.collider.CompareTag("Enemy"))
             {
-                // WE SPOTTED THE PLAYER!
                 print("SEEN!");
+                enemySprite.GetComponent<SpriteRenderer>().enabled = true;
                 Debug.DrawRay(fovPoint.position, dir, Color.red);
             }
             else
             {
                 enemySprite.GetComponent<SpriteRenderer>().enabled = false;
+                Debug.DrawRay(fovPoint.position, dir, Color.red);
                 print("we dont seen");
             }
         }
