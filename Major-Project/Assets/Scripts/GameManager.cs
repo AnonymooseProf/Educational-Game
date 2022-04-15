@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject nextLevelPannel;
     public GameObject gameOverPannel;
     public GameObject pausePannel;
+    public GameObject[] Levels;
+    public GameObject ResetScreen, End;
+    int currentLevel;
     void Start()
     {
         
@@ -44,7 +47,6 @@ public class GameManager : MonoBehaviour
         pausePannel.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
-
     }
 
     public void PlayAgain()
@@ -61,5 +63,32 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverPannel.SetActive(true);
+    }
+
+
+    public void wrongAnswer()
+    {
+        ResetScreen.SetActive(true);
+    }
+
+    public void ResetGame()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void correctAnswer()
+    {
+        if (currentLevel + 1 != Levels.Length)
+        {
+            Levels[currentLevel].SetActive(false);
+
+            currentLevel++;
+            Levels[currentLevel].SetActive(true);
+        }
+        else
+        {
+            End.SetActive(true);
+            Levels[currentLevel].SetActive(false);
+        }
     }
 }
