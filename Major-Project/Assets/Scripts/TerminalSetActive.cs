@@ -5,19 +5,14 @@ using UnityEngine;
 public class TerminalSetActive : MonoBehaviour, Terminals
 {
     private bool isOpen = false;
-    public GameObject quizOne;
+
     public void OpenTerminal()
     {
         FindQuiz(gameObject.tag);
     }
     public void CloseTerminal()
     {
-        //public void ContinueAfterPause()
-        //{
-        //    pausePannel.SetActive(false);
-        //    Time.timeScale = 1f;
-        //    isGamePaused = false;
-        //}
+        FindQuizToClose(gameObject.tag);
     }
 
     public void ToggleTerminal()
@@ -39,6 +34,16 @@ public class TerminalSetActive : MonoBehaviour, Terminals
         if (quizNumber.Equals("terminalOne"))
         {
             quizes.openQuizOne();
+        }
+
+    }
+
+    public void FindQuizToClose(string quizNumber)
+    {
+        Quizes quizes = FindObjectOfType<Quizes>();
+        if (quizNumber.Equals("terminalOne"))
+        {
+            quizes.closeQuizOne();
         }
 
     }
