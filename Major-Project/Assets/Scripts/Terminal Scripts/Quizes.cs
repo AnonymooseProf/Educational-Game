@@ -10,6 +10,7 @@ public class Quizes : MonoBehaviour
     private GameObject currentQuiz;
     private GameObject playerAnswer;
     public PLayerController player;
+    public GameManager manager;
     public void openQuizOne()
     {
         currentQuiz = quizOne;
@@ -30,6 +31,7 @@ public class Quizes : MonoBehaviour
         currentQuiz.SetActive(false);
         correctAnswer.SetActive(true);
         playerAnswer = correctAnswer;
+        manager.UpdateScoreCounter(20);
     }
 
     public void IncorrectAnswer()
@@ -37,6 +39,7 @@ public class Quizes : MonoBehaviour
         currentQuiz.SetActive(false);
         incorrectAnswer.SetActive(true);
         playerAnswer = incorrectAnswer;
+        manager.UpdateScoreCounter(-10);
     }
 
     public void ContinueAfterAnswer()

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public bool gameOver;
     public bool isGamePaused = false;
+    public Text scoreText;
     public PLayerController player;
     public GameObject nextLevelPannel;
     public GameObject gameOverPannel;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] Levels;
     public GameObject ResetScreen, End;
     public GameObject startGameScreen;
+    public float playerScore = 0;
     int currentLevel;
     void Start()
     {
@@ -38,9 +40,16 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void UpdateScoreCounter(float newScore)
+    {
+        playerScore += newScore;
+        scoreText.text = "Score: " + playerScore;
+    }
+
     public void StartGame()
     {
         player.TogglePlayerLight(false);
+        scoreText.text = "Score: " + playerScore;
         Time.timeScale = 0f;
         startGameScreen.SetActive(true);
     }
