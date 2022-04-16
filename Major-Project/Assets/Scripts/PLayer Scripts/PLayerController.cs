@@ -6,6 +6,7 @@ public class PLayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
+    public GameObject playerLight;
     float movementSpeed = 4f;
     float movementLimter = 0.7f;
     float inputVerticle;
@@ -30,6 +31,18 @@ public class PLayerController : MonoBehaviour
     {
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVerticle = Input.GetAxisRaw("Vertical");
+    }
+
+    public void TogglePlayerLight(bool isLight)
+    {
+        if (isLight)
+        {
+            playerLight.SetActive(true);
+        }
+        else
+        {
+            playerLight.SetActive(false);
+        }
     }
 
     private void FixedUpdate()

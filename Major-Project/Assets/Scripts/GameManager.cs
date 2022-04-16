@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
 {
     public bool gameOver;
     public bool isGamePaused = false;
+    public PLayerController player;
     public GameObject nextLevelPannel;
     public GameObject gameOverPannel;
     public GameObject pausePannel;
     public GameObject[] Levels;
     public GameObject ResetScreen, End;
+    public GameObject startGameScreen;
     int currentLevel;
     void Start()
     {
@@ -38,6 +40,15 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        player.TogglePlayerLight(false);
+        Time.timeScale = 0f;
+        startGameScreen.SetActive(true);
+    }
+    public void StartGameTimer()
+    {
+        startGameScreen.SetActive(false);
+        Time.timeScale = 1f;
+        player.TogglePlayerLight(true);
         TimerController.instance.BeginTimer();
     }
 
