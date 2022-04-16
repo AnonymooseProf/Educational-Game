@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     int currentLevel;
     void Start()
     {
-        
+        StartGame();
     }
 
     // Update is called once per frame
@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
             }
         }
         
+    }
+
+    public void StartGame()
+    {
+        TimerController.instance.BeginTimer();
     }
 
     public void PauseGame()
@@ -63,32 +68,5 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverPannel.SetActive(true);
-    }
-
-
-    public void wrongAnswer()
-    {
-        ResetScreen.SetActive(true);
-    }
-
-    public void ResetGame()
-    {
-        Application.LoadLevel(Application.loadedLevel);
-    }
-
-    public void correctAnswer()
-    {
-        if (currentLevel + 1 != Levels.Length)
-        {
-            Levels[currentLevel].SetActive(false);
-
-            currentLevel++;
-            Levels[currentLevel].SetActive(true);
-        }
-        else
-        {
-            End.SetActive(true);
-            Levels[currentLevel].SetActive(false);
-        }
     }
 }
