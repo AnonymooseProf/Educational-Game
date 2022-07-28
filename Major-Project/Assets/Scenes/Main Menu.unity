@@ -535,23 +535,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Move the paddle to the left and right using the A & D keys.
+  m_Text: 'Move the player to the left and right using the WASD keys.
 
 
-    Start
-    the puck to the left or right using the <  > arrow keys.
-
-
-    Try to stop the
-    puck from falling below the paddle.
-
-
-    Destory all the possible blocks before
-    you run out of lives.
-
-
-    Power ups you can catch fall from blocks that may
-    help or hinder you.
+    (FILL
+    OUT)
 
 '
 --- !u!222 &201961234

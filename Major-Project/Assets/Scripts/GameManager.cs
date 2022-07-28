@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 PauseGame();
+                player.TogglePlayerLight(false);
             }
         }
         
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
     public void ContinueAfterPause()
     {
         pausePannel.SetActive(false);
+        player.TogglePlayerLight(true);
         Time.timeScale = 1f;
         isGamePaused = false;
     }
