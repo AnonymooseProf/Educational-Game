@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
         TimerController.instance.BeginTimer();
     }
 
+    public void UpdateTimer(float timeChange)
+    {
+        TimerController.instance.UpdateTimer(timeChange);
+    }
+
     public void PauseGame()
     {
         pausePannel.SetActive(true);

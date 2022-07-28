@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4375011813972328270}
   - component: {fileID: 6124314205508299207}
   - component: {fileID: 5620969643422231439}
+  - component: {fileID: -5225133515160668769}
+  - component: {fileID: 2268157208624508192}
   m_Layer: 0
   m_Name: bottle_green
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8998600908757913316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.32065937, y: 0.32065937, z: 0.32065937}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,3 +126,32 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &-5225133515160668769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998600908757913316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0db271f12719049bc86b143fa7185a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpEffect: {fileID: 11400000, guid: a6785b58d8483f94bbdeccbda5fc9134, type: 2}
+--- !u!70 &2268157208624508192
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998600908757913316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.36, y: 0.67}
+  m_Size: {x: 1.7, y: 2.44}
+  m_Direction: 0

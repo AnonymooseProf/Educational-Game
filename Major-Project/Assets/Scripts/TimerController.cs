@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class TimerController : MonoBehaviour
 {
     public static TimerController instance;
+    public float currentTime;
 
     public Text timeCounter;
 
@@ -31,7 +32,7 @@ public class TimerController : MonoBehaviour
         timerGoing = true;
         elapsedTime = 0f;
 
-        StartCoroutine(UpdateTimer());
+        StartCoroutine(UpdateTimer(0));
     }
 
     public void EndTimer()
@@ -39,11 +40,15 @@ public class TimerController : MonoBehaviour
         timerGoing = false;
     }
 
-    private IEnumerator UpdateTimer()
+    public IEnumerator UpdateTimer(float timerChange)
     {
         while (timerGoing)
         {
             elapsedTime += Time.deltaTime;
+            if (timerChange > 0)
+            {
+                elapsedTime -= timerChange;
+            }
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
             string timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
             timeCounter.text = timePlayingStr;

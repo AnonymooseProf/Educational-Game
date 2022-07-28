@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - terminalOne
   - Quiz
+  - TimePowerUp
   layers:
   - Default
   - TransparentFX

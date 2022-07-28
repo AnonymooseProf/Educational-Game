@@ -12,7 +12,7 @@ public class PowerUpSpawn : MonoBehaviour
     {
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            Instantiate(spawnObjects[Random.Range(0, spawnObjects.Length)], spawnPoints[Random.Range(0,spawnPoints.Length)]);
+            Instantiate(spawnObjects[Random.Range(0, spawnObjects.Length)], spawnPoints[i]);
         }
     }
 

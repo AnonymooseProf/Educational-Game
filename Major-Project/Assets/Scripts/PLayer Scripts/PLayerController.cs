@@ -7,7 +7,7 @@ public class PLayerController : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
     public GameObject playerLight;
-    float movementSpeed = 4f;
+    public float movementSpeed = 4f;
     float movementLimter = 0.7f;
     float inputVerticle;
     float inputHorizontal;
