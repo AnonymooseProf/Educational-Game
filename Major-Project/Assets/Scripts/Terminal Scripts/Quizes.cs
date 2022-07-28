@@ -5,6 +5,7 @@ using UnityEngine;
 public class Quizes : MonoBehaviour
 {
     public GameObject quizOne;
+    public GameObject quizTwo;
     public GameObject correctAnswer;
     public GameObject incorrectAnswer;
     private GameObject currentQuiz;
@@ -18,7 +19,41 @@ public class Quizes : MonoBehaviour
         Time.timeScale = 0f;
         player.TogglePlayerLight(false);
     }
-    
+
+    public void OpenQuizes(int quizNumber)
+    {
+        Time.timeScale = 0f;
+        player.TogglePlayerLight(false);
+        switch (quizNumber)
+        {
+            case 1:
+                currentQuiz = quizOne;
+                quizOne.SetActive(true);
+                break;
+            case 2:
+                currentQuiz = quizTwo;
+                quizTwo.SetActive(true);
+                break;
+        }
+
+    }
+
+    public void CloseQuizes(int quizNumber)
+    {
+        Time.timeScale = 1f;
+        player.TogglePlayerLight(true);
+        switch (quizNumber)
+        {
+            case 1:
+                quizOne.SetActive(false);
+                break;
+            case 2:
+                quizTwo.SetActive(false);
+                break;
+        }
+
+    }
+
     public void closeQuizOne()
     {
         quizOne.SetActive(false);

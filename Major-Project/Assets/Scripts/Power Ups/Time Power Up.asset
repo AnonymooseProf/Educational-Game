@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74309e87f5f27084db493b4b129bd2f9, type: 3}
   m_Name: Time Power Up
   m_EditorClassIdentifier: 
-  timeDecreaseAmount: 10
+  timeDecreaseAmount: 5

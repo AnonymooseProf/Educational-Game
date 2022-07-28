@@ -8,6 +8,7 @@ TagManager:
   - terminalOne
   - Quiz
   - TimePowerUp
+  - terminalTwo
   layers:
   - Default
   - TransparentFX

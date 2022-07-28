@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: FOV Power Up
   m_EditorClassIdentifier: 
   innerAndOutterIncrease: 30
-  radiusIncrease: 2
+  radiusIncrease: 1

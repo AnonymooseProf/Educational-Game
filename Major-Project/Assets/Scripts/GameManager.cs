@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateTimer(float timeChange)
     {
-        TimerController.instance.UpdateTimer(timeChange);
+        TimerController.instance.elapsedTime -= timeChange;
     }
 
     public void PauseGame()

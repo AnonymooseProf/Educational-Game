@@ -33,7 +33,11 @@ public class TerminalSetActive : MonoBehaviour, Terminals
         Quizes quizes = FindObjectOfType<Quizes>();
         if (quizNumber.Equals("terminalOne"))
         {
-            quizes.openQuizOne();
+            quizes.OpenQuizes(1);
+        }
+        else if(quizNumber.Equals("terminalTwo"))
+        {
+            quizes.OpenQuizes(2);
         }
 
     }
@@ -43,7 +47,11 @@ public class TerminalSetActive : MonoBehaviour, Terminals
         Quizes quizes = FindObjectOfType<Quizes>();
         if (quizNumber.Equals("terminalOne"))
         {
-            quizes.closeQuizOne();
+            quizes.CloseQuizes(1);
+        }
+        else if (quizNumber.Equals("terminalTwo"))
+        {
+            quizes.CloseQuizes(2);
         }
 
     }
