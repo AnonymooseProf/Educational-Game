@@ -4,35 +4,48 @@ using UnityEngine;
 
 public class Quizes : MonoBehaviour
 {
-    public GameObject quizOne;
-    public GameObject quizTwo;
+    public GameObject[] allQuizes;
     public GameObject correctAnswer;
     public GameObject incorrectAnswer;
     private GameObject currentQuiz;
     private GameObject playerAnswer;
     public PLayerController player;
     public GameManager manager;
-    public void openQuizOne()
-    {
-        currentQuiz = quizOne;
-        quizOne.SetActive(true);
-        Time.timeScale = 0f;
-        player.TogglePlayerLight(false);
-    }
-
+    
     public void OpenQuizes(int quizNumber)
     {
         Time.timeScale = 0f;
         player.TogglePlayerLight(false);
+        //to be improved with loop
         switch (quizNumber)
         {
             case 1:
-                currentQuiz = quizOne;
-                quizOne.SetActive(true);
+                currentQuiz = allQuizes[quizNumber-=1];
+                allQuizes[0].SetActive(true);
                 break;
             case 2:
-                currentQuiz = quizTwo;
-                quizTwo.SetActive(true);
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[1].SetActive(true);
+                break;
+            case 3:
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[2].SetActive(true);
+                break;
+            case 4:
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[3].SetActive(true);
+                break;
+            case 5:
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[4].SetActive(true);
+                break;
+            case 6:
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[5].SetActive(true);
+                break;
+            case 7:
+                currentQuiz = allQuizes[quizNumber -= 1];
+                allQuizes[6].SetActive(true);
                 break;
         }
 
@@ -42,23 +55,32 @@ public class Quizes : MonoBehaviour
     {
         Time.timeScale = 1f;
         player.TogglePlayerLight(true);
+        //to be improved with loop
         switch (quizNumber)
         {
             case 1:
-                quizOne.SetActive(false);
+                allQuizes[0].SetActive(false);
                 break;
             case 2:
-                quizTwo.SetActive(false);
+                allQuizes[1].SetActive(false);
                 break;
+            case 3:
+                allQuizes[0].SetActive(false);
+                break;
+            case 4:
+                allQuizes[1].SetActive(false);
+                break;
+            case 5:
+                allQuizes[0].SetActive(false);
+                break;
+            case 6:
+                allQuizes[1].SetActive(false);
+                break;
+            case 7:
+                allQuizes[0].SetActive(false);
+                break;  
         }
 
-    }
-
-    public void closeQuizOne()
-    {
-        quizOne.SetActive(false);
-        Time.timeScale = 1f;
-        player.TogglePlayerLight(true);
     }
 
     public void CorrectAnswer()
