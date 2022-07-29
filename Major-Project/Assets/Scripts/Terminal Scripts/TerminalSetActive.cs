@@ -19,11 +19,11 @@ public class TerminalSetActive : MonoBehaviour, Terminals
     }
     public void OpenTerminal()
     {
-        ShinyNewFindQuiz(gameObject.tag);
+        OpenQuizes(gameObject.tag);
     }
     public void CloseTerminal()
     {
-        ShinyNewFindQuizToClose(gameObject.tag);
+        FindQuizToClose(gameObject.tag);
     }
 
     public void ToggleTerminal()
@@ -31,29 +31,37 @@ public class TerminalSetActive : MonoBehaviour, Terminals
         isOpen = !isOpen;
         if (isOpen)
         {
-            OpenTerminal();
+            OpenQuizes(gameObject.tag);
         }
         else
         {
-            CloseTerminal();
+            FindQuizToClose(gameObject.tag);
         }
     }
 
     //I've deleted the old function but trust me this is much more sexy
     //This is first material surely :)
-    public void ShinyNewFindQuiz(string terminalName)
+    public int FindQuiz(string terminalName)
     {
-        Quizes quizes = FindObjectOfType<Quizes>();
+        
         foreach (KeyValuePair<string, int> i in terminals)
         {
             if (terminalName.Equals(i.Key))
             {
-                quizes.OpenQuizes(i.Value);
+                return(i.Value);
             }       
         }
+        return -1;
     }
 
-    public void ShinyNewFindQuizToClose(string terminalName)
+    public void OpenQuizes(string terminalName)
+    {
+        Quizes quizes = FindObjectOfType<Quizes>();
+        int terminalNumber = FindQuiz(terminalName);
+        quizes.OpenQuizes(terminalNumber);
+    }
+
+    public void FindQuizToClose(string terminalName)
     {
         Quizes quizes = FindObjectOfType<Quizes>();
         foreach (KeyValuePair<string, int> i in terminals)
@@ -64,74 +72,4 @@ public class TerminalSetActive : MonoBehaviour, Terminals
             }
         }
     }
-    /*public void FindQuiz(string quizNumber)
-    {
-        //I know this could be done better but brain fryed at the mmoment so this is how we roll
-        Quizes quizes = FindObjectOfType<Quizes>();
-        if (quizNumber.Equals("terminalOne"))
-        {
-            quizes.OpenQuizes(1);
-        }
-        else if(quizNumber.Equals("terminalTwo"))
-        {
-            quizes.OpenQuizes(2);
-        }
-        else if (quizNumber.Equals("terminalThree"))
-        {
-            quizes.OpenQuizes(3);
-        }
-        else if (quizNumber.Equals("terminalFour"))
-        {
-            quizes.OpenQuizes(4);
-        }
-        else if (quizNumber.Equals("terminalFive"))
-        {
-            quizes.OpenQuizes(5);
-        }
-        else if (quizNumber.Equals("terminalSix"))
-        {
-            quizes.OpenQuizes(6);
-        }
-        else if (quizNumber.Equals("terminalSeven"))
-        {
-            quizes.OpenQuizes(7);
-        }
-
-    }
-
-    public void FindQuizToClose(string quizNumber)
-    {
-        //I figured out and if I have time I'll impliment it, can make array of the terminal names and use a loop to cycle through the check instead of this mess
-        //Not very future proof, sorry to who ever may expand on this :)
-        Quizes quizes = FindObjectOfType<Quizes>();
-        if (quizNumber.Equals("terminalOne"))
-        {
-            quizes.CloseQuizes(1);
-        }
-        else if (quizNumber.Equals("terminalTwo"))
-        {
-            quizes.CloseQuizes(2);
-        }
-        else if (quizNumber.Equals("terminalThree"))
-        {
-            quizes.CloseQuizes(3);
-        }
-        else if (quizNumber.Equals("terminalFour"))
-        {
-            quizes.CloseQuizes(4);
-        }
-        else if (quizNumber.Equals("terminalFive"))
-        {
-            quizes.CloseQuizes(5);
-        }
-        else if (quizNumber.Equals("terminalSix"))
-        {
-            quizes.CloseQuizes(6);
-        }
-        else if (quizNumber.Equals("terminalSeven"))
-        {
-            quizes.CloseQuizes(7);
-        }
-    }
-    */
 }

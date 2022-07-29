@@ -14,6 +14,13 @@ TagManager:
   - terminalFive
   - terminalSix
   - terminalSeven
+  - quizOne
+  - quizTwo
+  - quizThree
+  - quizFour
+  - quizFive
+  - quizSix
+  - quizSeven
   layers:
   - Default
   - TransparentFX

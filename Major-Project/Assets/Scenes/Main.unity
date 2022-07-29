@@ -25147,7 +25147,7 @@ GameObject:
   - component: {fileID: 555859562}
   m_Layer: 0
   m_Name: Quiz Two
-  m_TagString: Quiz
+  m_TagString: quizTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32562,7 +32562,7 @@ GameObject:
   - component: {fileID: 932691835}
   m_Layer: 0
   m_Name: Quiz Seven
-  m_TagString: Quiz
+  m_TagString: quizSeven
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36037,6 +36037,7 @@ MonoBehaviour:
   - {fileID: 2060659942}
   - {fileID: 1141317191}
   - {fileID: 932691834}
+  isComplete: 00000000000000
   correctAnswer: {fileID: 861680032}
   incorrectAnswer: {fileID: 1184869622}
   player: {fileID: 549050211}
@@ -36725,7 +36726,7 @@ GameObject:
   - component: {fileID: 1141317192}
   m_Layer: 0
   m_Name: Quiz Six
-  m_TagString: Quiz
+  m_TagString: quizSix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36835,7 +36836,7 @@ GameObject:
   - component: {fileID: 1150726993}
   m_Layer: 0
   m_Name: Quiz Four
-  m_TagString: Quiz
+  m_TagString: quizFour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52221,6 +52222,50 @@ Transform:
   m_Father: {fileID: 1098746612}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1759118776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759118778}
+  - component: {fileID: 1759118777}
+  m_Layer: 0
+  m_Name: TerminalButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759118777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759118776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feabd8e3de2d2e41990880a174eacef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 549050210}
+--- !u!4 &1759118778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759118776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1014.57477, y: 472.5913, z: -414.7475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765542770
 GameObject:
   m_ObjectHideFlags: 0
@@ -56303,7 +56348,7 @@ GameObject:
   - component: {fileID: 1896866850}
   m_Layer: 0
   m_Name: Quiz One
-  m_TagString: Quiz
+  m_TagString: quizOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59122,7 +59167,7 @@ GameObject:
   - component: {fileID: 2060659943}
   m_Layer: 0
   m_Name: Quiz Five
-  m_TagString: Quiz
+  m_TagString: quizFive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59535,7 +59580,7 @@ GameObject:
   - component: {fileID: 2084381850}
   m_Layer: 0
   m_Name: Quiz Three
-  m_TagString: Quiz
+  m_TagString: quizThree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59879,50 +59924,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2096321823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2096321825}
-  - component: {fileID: 2096321824}
-  m_Layer: 0
-  m_Name: TerminalButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2096321824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096321823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8feabd8e3de2d2e41990880a174eacef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 549050210}
---- !u!4 &2096321825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096321823}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1014.57477, y: 472.5913, z: -414.7475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104815348
 GameObject:
   m_ObjectHideFlags: 0
