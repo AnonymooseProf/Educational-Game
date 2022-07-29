@@ -11,6 +11,11 @@ public class StartMenu : MonoBehaviour
         Debug.Log("QUIT PUSHED");
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void LevelSelect()
     {
         SceneManager.LoadScene("Level Select");
