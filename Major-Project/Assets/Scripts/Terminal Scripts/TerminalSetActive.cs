@@ -40,6 +40,7 @@ public class TerminalSetActive : MonoBehaviour, Terminals
     }
 
     //I've deleted the old function but trust me this is much more sexy
+    //This is first material surely :)
     public void ShinyNewFindQuiz(string terminalName)
     {
         Quizes quizes = FindObjectOfType<Quizes>();

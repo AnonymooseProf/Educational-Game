@@ -65,19 +65,19 @@ public class Quizes : MonoBehaviour
                 allQuizes[1].SetActive(false);
                 break;
             case 3:
-                allQuizes[0].SetActive(false);
+                allQuizes[2].SetActive(false);
                 break;
             case 4:
-                allQuizes[1].SetActive(false);
+                allQuizes[3].SetActive(false);
                 break;
             case 5:
-                allQuizes[0].SetActive(false);
+                allQuizes[4].SetActive(false);
                 break;
             case 6:
-                allQuizes[1].SetActive(false);
+                allQuizes[5].SetActive(false);
                 break;
             case 7:
-                allQuizes[0].SetActive(false);
+                allQuizes[6].SetActive(false);
                 break;  
         }
 
