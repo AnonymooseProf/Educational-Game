@@ -10,14 +10,14 @@ public class GameManager : MonoBehaviour
     public bool isGamePaused = false;
     public Text scoreText;
     public PLayerController player;
-    public GameObject nextLevelPannel;
-    public GameObject gameOverPannel;
     public GameObject pausePannel;
     public GameObject[] Levels;
     public GameObject ResetScreen, End;
     public GameObject startGameScreen;
+    public GameObject notFinishedScreen;
     public float playerScore = 0;
     int currentLevel;
+    int i;
     void Start()
     {
         StartGame();
@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     public void ContinueAfterPause()
     {
         pausePannel.SetActive(false);
+        notFinishedScreen.SetActive(false);
         player.TogglePlayerLight(true);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -89,11 +90,5 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         SceneManager.LoadScene("Main Menu");
-    }
-
-    void GameOver()
-    {
-        gameOver = true;
-        gameOverPannel.SetActive(true);
     }
 }
