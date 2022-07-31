@@ -16,18 +16,19 @@ public class Quizes : MonoBehaviour
 
     public void Start()
     {
-        quizes.Add("quizOne", 1);
-        quizes.Add("quizTwo", 2);
-        quizes.Add("quizThree", 3);
-        quizes.Add("quizFour", 4);
-        quizes.Add("quizFive", 5);
-        quizes.Add("quizSix", 6);
-        quizes.Add("quizSeven", 7);
+        quizes.Add("quizOne", 0);
+        quizes.Add("quizTwo", 1);
+        quizes.Add("quizThree", 2);
+        quizes.Add("quizFour", 3);
+        quizes.Add("quizFive", 4);
+        quizes.Add("quizSix", 5);
+        quizes.Add("quizSeven", 6);
     }
 
     public void OpenQuizes(int quizNumber)
     {
-        if (!isComplete[quizNumber])
+        int arrayCheck = quizNumber - 1;
+        if (!isComplete[arrayCheck])
         {
             Time.timeScale = 0f;
             player.TogglePlayerLight(false);
@@ -35,31 +36,31 @@ public class Quizes : MonoBehaviour
             switch (quizNumber)
             {
                 case 1:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[0].SetActive(true);
                     break;
                 case 2:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[1].SetActive(true);
                     break;
                 case 3:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[2].SetActive(true);
                     break;
                 case 4:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[3].SetActive(true);
                     break;
                 case 5:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[4].SetActive(true);
                     break;
                 case 6:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[5].SetActive(true);
                     break;
                 case 7:
-                    currentQuiz = allQuizes[quizNumber -= 1];
+                    currentQuiz = allQuizes[arrayCheck];
                     allQuizes[6].SetActive(true);
                     break;
             }
@@ -71,8 +72,9 @@ public class Quizes : MonoBehaviour
     {
         Time.timeScale = 1f;
         player.TogglePlayerLight(true);
+        int arrayCheck = quizNumber - 1;
         //to be improved with loop
-        switch (quizNumber)
+        switch (arrayCheck)
         {
             case 1:
                 allQuizes[0].SetActive(false);

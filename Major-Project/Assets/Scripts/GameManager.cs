@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public GameObject notFinishedScreen;
     public float playerScore = 0;
     int currentLevel;
-    int i;
     void Start()
     {
         StartGame();
@@ -44,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void UpdateScoreCounter(float newScore)
     {
         playerScore += newScore;
+        PlayerInfo.playerScore += newScore;
         scoreText.text = "Score: " + playerScore;
     }
 

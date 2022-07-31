@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
 
-[CreateAssetMenu(menuName = "ScreenInfo/PlayerInfo")]
-public class PlayerInfo : ScriptableObject
+public class PlayerInfo : MonoBehaviour
 {
-    public float playerScore;
-    public float playerTime;
-    public string playerName;
+    public static float playerScore;
+    public static float playerTime;
+    public static string playerName;
 }
