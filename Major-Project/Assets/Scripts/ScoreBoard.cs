@@ -12,7 +12,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log(PlayerInfo.playerScore);
+        
         UpdateScoreCounter();
     }
     public void UpdateScoreCounter()
@@ -22,9 +22,19 @@ public class ScoreBoard : MonoBehaviour
 
     public void EndGameTimerScoreModifier(float playerTime)
     {
+        int scoreModifier;
         if(playerTime < 61)
         {
-
+            scoreModifier = HighScore;
         }
+        else if(playerTime < 120 && playerTime > 60)
+        {
+            scoreModifier = MediumScore;
+        }
+        else
+        {
+            scoreModifier = LowScore;
+        }
+        PlayerInfo.playerScore += scoreModifier;
     }
 }
