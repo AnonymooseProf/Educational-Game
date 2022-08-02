@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4566032436863982630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4566032436863982624}
+  - component: {fileID: 4566032436863982631}
+  m_Layer: 0
+  m_Name: CluePicker
+  m_TagString: CluePicker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4566032436863982624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566032436863982630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.839642, y: 7.89598, z: -618.02606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4566032436863982631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566032436863982630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9bc3c7c0e67d64993d682d40971901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueShown: 0000000000
+  levelOneClues:
+  - {fileID: 3948241766810763782, guid: fe357f053cd21b04ab29c5c9abaa5020, type: 3}
+  - {fileID: 746553219547361105, guid: da23be0243a624c4e963e8b7dd187518, type: 3}
+  - {fileID: 5454409305786908541, guid: 8adbed535f7d09f429a326f683159e5c, type: 3}
+  - {fileID: 7795429708401929592, guid: 76bdf667fb41c48458ffe1358e7f9c62, type: 3}
+  - {fileID: 2896422640661060999, guid: cc9e0eb25fd533d46a268081406a8e24, type: 3}

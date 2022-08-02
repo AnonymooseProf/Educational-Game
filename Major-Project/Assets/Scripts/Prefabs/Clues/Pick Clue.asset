@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c877758dcbd89d649b04358c9c6c08cb, type: 3}
   m_Name: Pick Clue
   m_EditorClassIdentifier: 
-  clueShown: 0000000000
+  clueShown: 0101010101
   clues:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3948241766810763782, guid: fe357f053cd21b04ab29c5c9abaa5020, type: 3}
+  - {fileID: 746553219547361105, guid: da23be0243a624c4e963e8b7dd187518, type: 3}
+  - {fileID: 5454409305786908541, guid: 8adbed535f7d09f429a326f683159e5c, type: 3}
+  - {fileID: 7795429708401929592, guid: 76bdf667fb41c48458ffe1358e7f9c62, type: 3}
+  - {fileID: 2896422640661060999, guid: cc9e0eb25fd533d46a268081406a8e24, type: 3}
+  clueNumber: 5

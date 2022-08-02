@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2613152243395519396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1335652542138753442, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Name
+      value: Clue One Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335652542138753442, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781270526060350563, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Text
+      value: Variables are used to store information to be referenced and manipulated
+        in a computer program. They also provide a way of labeling data with a descriptive
+        name, so our programs can be understood more clearly by the reader and ourselves.
+        It is helpful to think of variables as containers that hold information.
+        Their sole purpose is to label and store data in memory. This data can then
+        be used throughout your program.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781270526060350563, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572776167599535969, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 74.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448039369989057634, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Text
+      value: What is a varible?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}

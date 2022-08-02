@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6429104747567144671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1335652542138753442, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Name
+      value: Clue Three Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335652542138753442, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781270526060350563, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Text
+      value: "A global variable is a variable type that is declared outside any function
+        and is accessible to all functions throughout the program. A global variable
+        is usually declared on top of all functions and is kept to a minimum, as
+        all functions can manipulate them during the program\u2019s run time, which
+        is considered dangerous by most programmers because they may accidentally
+        be changed, resulting in bugs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781270526060350563, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781270526060350563, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572776167599535969, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 395.208
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572776167599535969, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65.23003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448039369989057634, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Text
+      value: Global Varibles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820836817194874833, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f069513ff7785746af2cfd12bdd5188, type: 3}

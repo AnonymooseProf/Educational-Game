@@ -21,6 +21,7 @@ TagManager:
   - quizFive
   - quizSix
   - quizSeven
+  - CluePicker
   layers:
   - Default
   - TransparentFX

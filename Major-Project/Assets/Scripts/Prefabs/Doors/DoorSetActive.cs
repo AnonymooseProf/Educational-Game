@@ -9,12 +9,14 @@ public class DoorSetActive : MonoBehaviour, Doors
     public GameObject notFinishedScreen;
     public GameManager gameManager;
     public PLayerController player;
+    public ScoreBoard scoreboard;
 
     public void ExitDoorActivate()
     {
         bool isComplete = ExitDoorCheck();
         if (isComplete)
         {
+            scoreboard.EndGameTimerScoreModifier(TimerController.instance.currentTime);
             SceneManager.LoadScene("End Screen");
         }
         else
