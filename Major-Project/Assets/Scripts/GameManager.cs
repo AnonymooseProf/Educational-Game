@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         player.TogglePlayerLight(false);
+        PlayerInfo.playerScore = 0;
         scoreText.text = "Score: " + playerScore;
         Time.timeScale = 0f;
         startGameScreen.SetActive(true);

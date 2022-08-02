@@ -16,7 +16,7 @@ public class DoorSetActive : MonoBehaviour, Doors
         bool isComplete = ExitDoorCheck();
         if (isComplete)
         {
-            scoreboard.EndGameTimerScoreModifier(TimerController.instance.currentTime);
+            scoreboard.EndGameTimerScoreModifier(TimerController.instance.elapsedTime);
             SceneManager.LoadScene("End Screen");
         }
         else
