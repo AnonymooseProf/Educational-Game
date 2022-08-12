@@ -538,8 +538,9 @@ MonoBehaviour:
   m_Text: 'Move the player to the left and right using the WASD keys.
 
 
-    (FILL
-    OUT)
+    Use the
+    mouse to look around and illuminate the surroundings
+
 
 '
 --- !u!222 &201961234
